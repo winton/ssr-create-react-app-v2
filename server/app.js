@@ -6,7 +6,7 @@ const morgan = require('morgan')
 const path = require('path')
 const fs = require('fs')
 
-require('babel-register')({ ignore: /\/(build|node_modules)\//, presets: ['react-app'] })
+require('babel-register')({ ignore: /\/(build|node_modules)\//, presets: ['es2015', 'react-app'] })
 
 // routes
 const index = require('./routes/index')
